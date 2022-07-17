@@ -133,7 +133,9 @@ nav ul li {
   line-height: var(--line-height);
   padding: 0.4rem;
 }
+/* More about ends*/
 
+/*Skills Section */
 .skills {
   max-width: 68.75rem;
   margin: auto;
@@ -153,15 +155,9 @@ nav ul li {
   width: 11.875rem;
   height: 11.25rem;
 }
+/*Skills Section ends */
 
-.icon-card {
-  background-color: #fff;
-  border-radius: 11px;
-  box-shadow: 0 3px 10px var(--secondary-shadow);
-  padding: 20px;
-  margin: 10px;
-}
-
+/* Project Section */
 .projects {
   background-color: var(--bg-color);
   padding: 32px 0;
@@ -201,11 +197,21 @@ nav ul li {
 .project-details {
   margin-bottom: var(--bottom-margin);
 }
-
+/*
 .project-card {
   background-color: #fff;
   border-radius: 11px;
   box-shadow: 0 3px 10px var(--primary-shadow);
+  padding: 20px;
+  margin: 10px;
+} */
+
+/* Projects Section ends */
+
+.icon-card {
+  background-color: #fff;
+  border-radius: 11px;
+  box-shadow: 0 3px 10px var(--secondary-shadow);
   padding: 20px;
   margin: 10px;
 }
