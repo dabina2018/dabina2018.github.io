@@ -284,6 +284,14 @@ nav ul li {
   width: 2rem;
   height: 2rem;
 }
+
+footer {
+  background-color: var(--bg-color);
+  padding: 1.25rem;
+  text-align: center;
+  margin: 2rem 0 0;
+}
+
 .scroll-up {
   position: fixed;
   right: 0.5%;
