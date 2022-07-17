@@ -392,3 +392,8 @@ nav ul.show {
 .project-container {
   width: 20.875rem;
 }
+
+/* contact form */
+.contact-form-container {
+  max-width: 23.75rem;
+}
