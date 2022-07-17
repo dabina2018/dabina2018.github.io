@@ -1,6 +1,9 @@
 // scroll to top functionality
 const scrollUp = document.querySelector("#scroll-up");
 
+//Select nav links
+const navLink = document.querySelectorAll(".nav-link");
+
 // scroll to top functionality
 scrollUp.addEventListener("click", () => {
   window.scrollTo({
