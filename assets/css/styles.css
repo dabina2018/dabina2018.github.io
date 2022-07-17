@@ -205,16 +205,8 @@ nav ul li {
   padding: 20px;
   margin: 10px;
 } */
-
 /* Projects Section ends */
 
-.icon-card {
-  background-color: #fff;
-  border-radius: 11px;
-  box-shadow: 0 3px 10px var(--secondary-shadow);
-  padding: 20px;
-  margin: 10px;
-}
 
 .contact {
   margin-top: 2rem;
@@ -308,6 +300,14 @@ footer {
 .up-arrow {
   width: 3rem;
   height: 3rem;
+}
+
+.icon-card {
+  background-color: #fff;
+  border-radius: 11px;
+  box-shadow: 0 3px 10px var(--secondary-shadow);
+  padding: 20px;
+  margin: 10px;
 }
 
 /* Media queries for responsiveness */
