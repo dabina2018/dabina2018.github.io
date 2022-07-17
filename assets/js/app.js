@@ -9,6 +9,14 @@ const scrollUp = document.querySelector("#scroll-up");
 //Select nav links
 const navLink = document.querySelectorAll(".nav-link");
 
+// Close hamburger menu when a link is clicked
+
+navLink.forEach((link) =>
+  link.addEventListener("click", () => {
+    ul.classList.remove("show");
+  })
+);
+
 // scroll to top functionality
 scrollUp.addEventListener("click", () => {
   window.scrollTo({
@@ -27,10 +35,5 @@ burger.addEventListener("click", () => {
   ul.classList.toggle("show");
 });
 
-// Close hamburger menu when a link is clicked
-navLink.forEach((link) =>
-  link.addEventListener("click", () => {
-    ul.classList.remove("show");
-  })
-);
+
 

@@ -322,6 +322,7 @@ nav {
   padding: 1.5rem 1rem;
 }
 
+/* Hamburger Menu */
 nav ul {
   position: fixed;
   background-color: var(--bg-color);
@@ -346,6 +347,7 @@ nav ul.show {
   transform: translateX(0);
 }
 
+/* Hero Section */
 .hero {
   margin-top: -4rem;
   flex-direction: column;
@@ -362,6 +364,7 @@ nav ul.show {
   width: 20.5rem;
 }
 
+/*More about me */
 .more-about {
   margin-top: 2rem;
   padding: 1rem 3.5rem;
@@ -373,4 +376,10 @@ nav ul.show {
 
 .more-about p {
   text-align: justify;
+}
+
+/* Skills Section */
+.icon {
+  width: 5.875rem;
+  height: 5.25rem;
 }
