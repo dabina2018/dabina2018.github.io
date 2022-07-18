@@ -25,6 +25,8 @@ function submitForm(e){
   var email = getElementVal ('email');
   var message = getElementVal('message');
 
+  saveMessages(name, email, message);
+
   console.log('Thank-you ' + name + ', someone will contact you soon.');
 }
 
