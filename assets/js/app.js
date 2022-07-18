@@ -14,7 +14,7 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 
 //reference your database
-var contactFormDB = firebase.database().ref('contact-form-53050');
+var contactFormDB = firebase.database().ref('https://contact-form-53050-default-rtdb.firebaseio.com/');
 
 document.getElementById('contactForm').addEventListener('submit', submitForm);
 
@@ -110,4 +110,3 @@ function saveMessage(name, email, message){
   });
 
 }
-
