@@ -16,7 +16,7 @@ firebase.initializeApp(firebaseConfig);
 //reference your database
 var contactFormDB = firebase.database().ref('contact-form-53050');
 
-document.getElementById('contactForm').addEventListener('submit-btn', submitForm);
+document.getElementById('contact-form-53050').addEventListener('submit-btn', submitForm);
 
 function submitForm(e){
   e.preventDefault();
