@@ -79,36 +79,3 @@ scrollUp.addEventListener("click", () => {
   });
 });
 
-/* form data */
-/*
-//Listen for form submit
-document.getElementById('contact').addEventListener('submit', submitForm);
-function submitForm(e){
-  e.preventDefault();
-
-  //Get user input values
-  var name = getInputVal('name');
-  var name = getInputVal('email');
-  var name = getInputVal('message');  
-
-  saveMessage(name, email, message);
-
-  console.log('Thank-you' + name + 'someone will contact you soon')
-  
-}
-
-//Function to grab form values
-function getInputVal(id){
-  return document.getElementById(id).value;
-}
-
-//save message to firebase
-function saveMessage(name, email, message){
-  var newMessageRef = messagesRef = messagesRef.push();
-  newMessageRef.set({
-    name: name,
-    email: email,
-    message: message
-  });
-
-}
