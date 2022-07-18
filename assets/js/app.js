@@ -1,27 +1,46 @@
 //firebase scripts
-<script type="module">
-  // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.0/firebase-app.js";
-  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.9.0/firebase-analytics.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
 
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  const firebaseConfig = {
-    apiKey: "AIzaSyCdVqLMM-LSmaqBSUC--X3jb8xC4QIpI50",
-    authDomain: "contact-form-53050.firebaseapp.com",
-    projectId: "contact-form-53050",
-    storageBucket: "contact-form-53050.appspot.com",
-    messagingSenderId: "839902421548",
-    appId: "1:839902421548:web:2e6c36d5b85714004ce789",
-    measurementId: "G-BY63JSYLK5"
-  };
+const firebaseConfig = {
+  apiKey: "AIzaSyCdVqLMM-LSmaqBSUC--X3jb8xC4QIpI50",
+  authDomain: "contact-form-53050.firebaseapp.com",
+  projectId: "contact-form-53050",
+  storageBucket: "contact-form-53050.appspot.com",
+  messagingSenderId: "839902421548",
+  appId: "1:839902421548:web:2e6c36d5b85714004ce789",
+  measurementId: "G-BY63JSYLK5"
+};
 
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-  const analytics = getAnalytics(app);
-</script>
+//initialize firebase
+firebase.initializeApp(firebaseConfig);
+
+//reference your database
+var contactFormDB = firebase.database().ref('contact-form-53050');
+
+document.getElementById('contactForm').addEventListener('submit', submitForm);
+
+function submitForm(e){
+  e.preventDefault();
+
+  var name = getElementVal('name');
+  var email = getElementVal ('email');
+  var message = getElementVal('message');
+
+  console.log('Thank-you ' + name + ', someone will contact you soon.');
+}
+
+const saveMessages = (name, email, message) => {
+  var newContactForm = contactFormDB.push();
+
+  newContactForm.set({
+    name: name,
+    email: email,
+    message: message
+  });
+}
+
+const getElementVal = (id) => {
+  return docuemnt.getElementById(id).value;
+}
 
 //Reference messages collection
 var messagesRef = firebase.database().ref('messages');
@@ -59,7 +78,7 @@ scrollUp.addEventListener("click", () => {
 });
 
 /* form data */
-
+/*
 //Listen for form submit
 document.getElementById('contact').addEventListener('submit', submitForm);
 function submitForm(e){
@@ -91,5 +110,4 @@ function saveMessage(name, email, message){
   });
 
 }
-
 
