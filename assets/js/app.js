@@ -14,9 +14,9 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 
 //reference your database
-var contactFormDB = firebase.database().ref('https://contact-form-53050-default-rtdb.firebaseio.com/');
+var contactFormDB = firebase.database().ref('contact-form-53050');
 
-document.getElementById('contactForm').addEventListener('submit', submitForm);
+document.getElementById('contactForm').addEventListener('submit-btn', submitForm);
 
 function submitForm(e){
   e.preventDefault();
