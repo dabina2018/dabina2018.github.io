@@ -2,7 +2,7 @@
 
 A portfolio website for Daveena Cooper
 
-![postmanaut](postmanaut.svg) 
+![postmanaut](postmanaut.png) 
 
 ## Author
 
