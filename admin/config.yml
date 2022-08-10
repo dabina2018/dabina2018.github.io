@@ -10,4 +10,3 @@ collections:
     folder: '_posts/'
     fields:
       - { name: Title }
-theme: jekyll-theme-minimal
